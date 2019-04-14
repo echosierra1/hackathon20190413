@@ -25,5 +25,26 @@
             android:onClick="onGPAbuttonClicked"
             android:text="Calculate GPA" />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onShapeButtonPress"
+            android:text="Calculate Area of Shape" />
+
+        <Button
+            android:id="@+id/Investment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onInvestmentButtonPress"
+            android:text="Investment Calculator" />
+
+        <Button
+            android:id="@+id/RandGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRandGameButtonPress"
+            android:text="Random Number Game" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

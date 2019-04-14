@@ -216,14 +216,14 @@ public class EmailPasswordActivity extends MainActivity implements
             findViewById(R.id.emailPasswordButtons).setVisibility(View.GONE);
             findViewById(R.id.emailPasswordFields).setVisibility(View.GONE);
             findViewById(R.id.signedInButtons).setVisibility(View.GONE);
-            findViewById(R.id.emailCreateAccountButton).setVisibility(View.GONE);
+            findViewById(R.id.emailCreateAccountButton).setVisibility(View.VISIBLE);
 
             findViewById(R.id.verifyEmailButton).setEnabled(!user.isEmailVerified());
         } else {
          //   mStatusTextView.setText(R.string.signed_out);
             mDetailTextView.setText(null);
 
-            findViewById(R.id.emailCreateAccountButton).setVisibility(View.VISIBLE);
+            findViewById(R.id.emailCreateAccountButton).setVisibility(View.GONE);
 
             findViewById(R.id.emailPasswordButtons).setVisibility(View.VISIBLE);
             findViewById(R.id.emailPasswordFields).setVisibility(View.GONE);

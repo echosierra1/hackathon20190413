@@ -26,7 +26,7 @@ public class InputGPA extends AppCompatActivity {
     TextView NameTV;
     String Grades = " ";
     int Classcount = 0;
-    int GPA = 0;
+    double GPA = 0;
 
 
     @Override
@@ -56,23 +56,42 @@ public class InputGPA extends AppCompatActivity {
         gradesTV.setText(Grades);
         Classcount = Classcount +1;
 
-        if(Classgrade.equals("A"))
+        if(Classgrade.equals("A+"))
         {
             GPA = GPA + 4;
         }
-        else if(Classgrade.equals("B")){
+        else if(Classgrade.equals("A")) {
+            GPA = GPA + 4;
+        }
+        else if(Classgrade.equals("A-")){
+            GPA = GPA + 3.7;
+        }else if(Classgrade.equals("B+")){
+            GPA = GPA + 3.3;
+        }else if(Classgrade.equals("B")){
             GPA = GPA + 3;
         }
-        else if(Classgrade.equals("C")){
-            GPA = GPA + 2;
+        else if(Classgrade.equals("B-")){
+            GPA = GPA + 2.7;
         }
-        else if(Classgrade.equals("D")){
+        else if(Classgrade.equals("C+")){
+            GPA = GPA + 2.3;
+        } else if(Classgrade.equals("C")){
+            GPA = GPA + 2;
+        } else if(Classgrade.equals("C-")){
+            GPA = GPA + 1.7;
+        }
+        else if(Classgrade.equals("D+")){
+            GPA = GPA + 1.3;
+        } else if(Classgrade.equals("D")){
             GPA = GPA + 1;
+        } else if(Classgrade.equals("D-")){
+            GPA = GPA + 0.7;
         }
         else if(Classgrade.equals("F")) {
             GPA = GPA + 0;
         }
-
+        ClassgradeET = (EditText)this.findViewById(R.id.EnterGradeET);
+        ClassgradeET.setText("");
     }
 
     public void onCalculateButtonPressed(View v)

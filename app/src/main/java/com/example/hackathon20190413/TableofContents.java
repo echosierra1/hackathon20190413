@@ -22,6 +22,17 @@ public class TableofContents extends AppCompatActivity {
         Intent i = new Intent(this, updateUser.class);
         startActivity(i);
     }
-
+    public void onShapeButtonPress(View v) {
+        Intent i = new Intent(this, CalculateShapes.class);
+        startActivity(i);
+    }
+    public void onInvestmentButtonPress(View v) {
+        Intent i = new Intent(this, LoanRepayment.class);
+        startActivity(i);
+    }
+    public void onRandGameButtonPress(View v) {
+        Intent i = new Intent(this, RandNumGuesser.class);
+        startActivity(i);
+    }
 
 }

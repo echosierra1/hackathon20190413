@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TableofContents"></activity>
+        <activity android:name=".Guessthenumber"></activity>
+        <activity android:name=".RandNumGuesser" />
+        <activity android:name=".LoanRepayment" />
+        <activity android:name=".CalculateShapes" />
+        <activity android:name=".TableofContents" />
         <activity android:name=".updateUser" />
         <activity
             android:name=".Register"
