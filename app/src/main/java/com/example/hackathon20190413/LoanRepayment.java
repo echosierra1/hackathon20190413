@@ -44,16 +44,13 @@ public class LoanRepayment extends AppCompatActivity {
 
         interest1 = interest1/100;
 
-        System.out.println("term " + term1 + "interest1" + interest1 + "pmt" + pmt1 + "princicple" + principle1);
 
 
             double something = Math.pow((1+interest1), term1);
-            System.out.println("****soumthing" + something);
 
             output = (principle1 * something);
             output2 = (pmt1 * ((something -1)/interest1));
 
-            System.out.println("output1" + output + "output2 " + output2);
             output = output + output2;
         FutureValue.setText(output + "");
 
